@@ -88,9 +88,9 @@ var scrollS=function(){
 	var _dHei=$(document).height();
 	var _h=0;
 	var _maxH=_dHei-_wHei;
-	var _pageNum=Math.ceil((_dHei-_wHei)/_wHei);
+	var _pageNum=Math.ceil(_maxH/_wHei);
 	var _pageNow=0;
-	var _maxdisplay=(Math.floor((_dHei-_wHei)/_wHei)*_wHei)+(_dHei%_wHei);
+	var _maxdisplay=(Math.floor(_maxH/_wHei))+(_maxH%_wHei);
 	$(document).on("mousewheel DOMMouseScroll", function (e) {
 
 
